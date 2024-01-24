@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/*or (const item of showModalWindow) {
+/*for (const item of showModalWindow) {
     item.querySelector(".modal-btn-close").onclick = () => item.remove();
   }
 */

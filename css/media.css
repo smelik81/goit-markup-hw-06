@@ -1,0 +1,234 @@
+
+
+/*!-------------ABOUT------------------*/
+
+@media screen and (min-width: 768px) {
+    .container {
+        min-width: 768px;
+        width: 100%;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+    .about-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+
+    }
+    .about-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .about {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .container {
+        min-width: 1158px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    
+    .about-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        
+    }
+    .about-list-item {
+        text-align: start;
+        width: calc((100% - 3 * 24px) / 4); 
+
+    }
+    .about-subtitle,
+    .team-subtitle,
+    .products-subtitle {
+        color: #2E2F42;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+    .about-subtitle {
+        text-align: start;
+    }
+    .about-description {
+        font-weight: 400;
+    }
+    .about-list > .about-block {
+        display: flex;
+        border-radius: 4px;
+        border: 1px solid #8E8F98;
+        background-color: #F4F4FD;
+        padding: 24px 100px;
+        margin-bottom: 8px;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+    }
+}
+
+
+    /*!--------------TEAM---------------------*/
+
+
+@media screen and (min-width: 768px) {
+    .team {
+        padding: 96px 108px;
+    }
+    .team > .container {
+        min-width: 552px;
+        width: 100%;
+        padding: 0;
+    }
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+    }
+    .team-card {
+        width: calc((100% - 24px) / 2);
+    }
+    .team-img {
+        height: auto;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .team {
+        padding: 120px 0;
+    }
+    .team > .container {
+        min-width: 1158px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .team-list {
+        justify-content: space-between;
+    }
+    .team-card {
+        width: calc((100% - 3 * 24px) / 4);
+    }
+
+}
+
+/*!------------------PRODUCTS------------------------*/
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .products-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        width: 100%;
+    }
+    .products-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+}
+@media screen and (min-width: 1158px) {
+    .products {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .products-list {
+        gap: 48px 24px;
+    }
+    .products-list-item {
+        width: calc((100% - 48px) / 3);
+    }
+}
+
+/*!--------------------FOOTER-------------------------*/
+
+
+@media only screen and (max-width: 767.98px) {
+  .footer .footer-block {
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .footer .footer-block {
+    display: flex;
+    padding: 0 108px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer .footer-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+    .footer .footer-block {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+       padding: 96px 0;
+    }
+    .container {
+        max-width: 768px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+    .footer-block {
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .footer-info {
+        width: 264px;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .footer-social {
+        padding-bottom: 32px;
+        align-items: flex-start;
+    }
+    .footer-form {
+        align-items: flex-start;
+    }
+    .footer-form-block {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .footer .container {
+        max-width: 1158px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+    
+    .footer-info {
+        margin-right: 120px;
+        align-items: baseline;
+    }
+    .footer-description {
+        width: 264px;
+        font-weight: 400;
+    }
+    .footer-social {
+         margin-right: 80px;
+    }
+}
