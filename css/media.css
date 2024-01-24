@@ -4,13 +4,11 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        min-width: 768px;
-        width: 100%;
+        max-width: 768px;
         padding: 0 16px;
         margin: 0 auto;
     }
     .about-list {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 24px;
@@ -29,18 +27,24 @@
     .container {
         min-width: 1158px;
         width: 100%;
-        padding: 0 15px;
-        margin: 0 auto;
     }
-    
-    .about-list {
+    .about-block {
         display: flex;
-        flex-direction: row;
+        border-radius: 4px;
+        border: 1px solid #8E8F98;
+        background-color: #F4F4FD;
+        padding: 24px 100px;
+        margin-bottom: 8px;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+    }
+    .about-list {
+        flex-wrap: nowrap;
         gap: 24px;
         
     }
     .about-list-item {
-        text-align: start;
         width: calc((100% - 3 * 24px) / 4); 
 
     }
@@ -59,17 +63,6 @@
     .about-description {
         font-weight: 400;
     }
-    .about-list > .about-block {
-        display: flex;
-        border-radius: 4px;
-        border: 1px solid #8E8F98;
-        background-color: #F4F4FD;
-        padding: 24px 100px;
-        margin-bottom: 8px;
-        justify-content: center;
-        align-items: center;
-        height: 112px;
-    }
 }
 
 
@@ -78,12 +71,12 @@
 
 @media screen and (min-width: 768px) {
     .team {
-        padding: 96px 108px;
+        padding: 96px 0;
     }
     .team > .container {
-        min-width: 552px;
-        width: 100%;
-        padding: 0;
+        max-width: 552px;
+        padding: 0 16px;
+        margin: 0 auto;
     }
     .team-list {
         display: flex;
@@ -95,6 +88,7 @@
         width: calc((100% - 24px) / 2);
     }
     .team-img {
+        width: 100%;
         height: auto;
     }
 }
@@ -103,18 +97,14 @@
         padding: 120px 0;
     }
     .team > .container {
-        min-width: 1158px;
-        width: 100%;
-        padding: 0 15px;
-        margin: 0 auto;
+        max-width: 1158px;
     }
     .team-list {
-        justify-content: space-between;
+        justify-content: space-between; /* можно gap-column: 24px*/
     }
     .team-card {
         width: calc((100% - 3 * 24px) / 4);
     }
-
 }
 
 /*!------------------PRODUCTS------------------------*/
@@ -153,7 +143,6 @@
 
 @media only screen and (max-width: 767.98px) {
   .footer .footer-block {
-    display: block;
     text-align: center;
   }
 }

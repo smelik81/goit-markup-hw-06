@@ -83,7 +83,7 @@ body {
     fill: #4d5ae5;
 }
 
-/*!----------------------GLOBAL---------------------*/
+/*!----------------------HEADER---------------------*/
 
 /*?-------------------------------------------------*/
 
@@ -183,7 +183,7 @@ body {
 }
 
 
-/*!----------------------HEADER---------------------*/
+/*!----------------------MAIN---------------------*/
 
 /*?-------------------------------------------------*/
 
@@ -235,36 +235,24 @@ body {
 }
 
 
-/*!----------------------MAIN---------------------*/
+/*!----------------------ABOUT---------------------*/
 
 /*?-------------------------------------------------*/
 
 
 .about {
-    padding: 96px 16px;
+    padding: 96px 0;
 }
-/*.about-block {
-    display: flex;
-    border-radius: 4px;
-    border: 1px solid #8E8F98;
-    background-color: #F4F4FD;
-    padding: 24px 100px;
-    margin-bottom: 8px;
-    justify-content: center;
-    align-items: center;
-    height: 112px;
-}*/
-
+.about-block {
+    display: none;
+}
 .about-list {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    /*gap: 24px;
-    justify-content: space-between;*/
 }
 .about-list-item {
     text-align: start;
-    /*width: calc((100% - 3 * 24px) / 4);*/
 }
 .about-subtitle {
     margin-bottom: 8px;
@@ -274,28 +262,25 @@ body {
 }*/
 
 
-/*!----------------------ABOUT---------------------*/
+/*!----------------------TEAM---------------------*/
 
 /*?-------------------------------------------------*/
 
 
 .team {
     
-    padding: 96px 28px;
+    padding: 96px 0;
     background-color: #F4F4FD;
 }
 
 .team-title {
-    /*margin-bottom: 72px;*/
-    margin: 0px auto 72px;
+    margin-bottom: 72px;
 }
 .team-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 72px;
-    /*gap: 24px;
-    justify-content: space-between;*/
 }
 .team-card {
     width: 264px;
@@ -304,19 +289,15 @@ body {
     background-color: #ffffff;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-/*.team-card:hover {
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}*/
 .team-img {
     width: 100%;
+    height: auto;
 }
 .team-info-block {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 32px 16px;
-    /*padding-bottom: 32px;
-    padding-top: 32px;*/ 
+    padding: 32px 16px;/*можно було задати тільки top/bottom 32px, але там є ще відступ 16 від країв тому написав так*/
 }
 .team-info-block > .team-subtitle {
     font-size: 20px;
@@ -337,7 +318,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 24px;
-    /*margin-top: 8px;*/
 }
 .team-soc-item {
     width: 40px;
@@ -362,23 +342,14 @@ body {
     fill: currentColor;
 }
 
-/*.team-subtitle {
-    margin-bottom: 8px;
-    text-align: center;
-}
-.team-description {
-    text-align: center;
-    padding-bottom: 32px;
-}*/
 
-
-/*!----------------------TEAM---------------------*/
+/*!----------------------PRODUCTS---------------------*/
 
 /*?-------------------------------------------------*/
 
 
 .products {
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 .products-title {
     margin-bottom: 72px;
@@ -390,9 +361,6 @@ body {
     cursor: pointer;
     align-items: center;
     width: 288px;
-    /*flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;*/
 }
 .products-list-item {
     width: 100%;
@@ -449,7 +417,7 @@ body {
 }
 
 
-/*!----------------------PRODUCTS---------------------*/
+/*!----------------------FOOTER---------------------*/
 
 /*?-------------------------------------------------*/
 
@@ -458,12 +426,15 @@ body {
     background-color: #2E2F42;
     padding: 96px 0;
 }
-
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
 .footer-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 72px;
 }
 .footer-logo {
     display: inline-block;
@@ -484,7 +455,6 @@ body {
     flex-direction: column;
     gap: 16px;
     align-items: center;
-    padding-bottom: 32px;
 }
 .footer-social-description {
     color: #FFFFFF;
@@ -540,8 +510,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    /*gap: 24px;
-    align-items: baseline;*/
 }
 .footer-input {
     padding-left: 16px;
@@ -588,7 +556,7 @@ body {
 }
 
 
-/*!----------------------FOOTER---------------------*/
+/*!----------------------BACKDROP---------------------*/
 
 /*?-------------------------------------------------*/
 
