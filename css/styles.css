@@ -103,25 +103,25 @@ body {
   /*max-width: 1440px;
     margin: 0 auto;*/
   position: relative;
-  padding: 16px 0;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
-.header .container {
+.container {
   max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header-navigation {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  position: relative;
 }
 .header-logo,
 .footer-logo {
@@ -133,10 +133,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   width: 115px;
+  padding: 16px 0;
 }
-.header-logo {
+/*.header-logo {
   margin-right: 76px;
-}
+}*/
 .header-logo span,
 .footer-logo span {
   color: #2e2f42;
@@ -182,15 +183,22 @@ body {
 .header-menu-home:focus {
   color: #404bbf;
 }
+.header-adres {
+  font-style: normal;
+}
 .header-info {
-  display: flex;
-  gap: 40px;
+  /*display: flex;
+  gap: 40px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
 }
 .header-info-link {
   color: #434455;
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.5;
+  font-weight: 400;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
@@ -198,9 +206,7 @@ body {
 .header-info-link:focus {
   color: #404bbf;
 }
-.header-adres {
-  font-style: normal;
-}
+
 .mobile-btn-menu {
   display: flex;
   align-items: center;
@@ -218,21 +224,24 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  background-color: #fff;
+  /*min-height: 623px;
+  height: 100vh;*/ /*можно задати любий по макету не зовсім зрозумів який треба*/
+  background-color: #F4F4FD;
   padding-top: 72px;
   padding-bottom: 40px;
+  padding-left: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transform: translateY(20%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+  transform: translateY(0%);
+  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  background-color: green;
   visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 .mobile-btn-menu:hover .mobile-window {
-  transform: translateY(0%);
+  transform: translateY(100%);
   visibility: visible;
 }
 .mobile-btn-close {
@@ -280,7 +289,7 @@ body {
 }
 .mob-soc-list {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* там по макету наче не рівні відступи 16/24*/
   align-items: center;
   gap: 40px;
 }
@@ -854,7 +863,7 @@ body {
   text-decoration: underline;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  /*margin-left: 4px;*/
+  margin-left: 24px;
 }
 
 .checkbox-description span {
