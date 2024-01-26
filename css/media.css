@@ -28,6 +28,9 @@
     .modal-title {
         width: 360px;
     }
+    .checkbox-description a {
+        margin-left: 0;
+    }
     .mobile-btn-menu {
         display: none;
     }
