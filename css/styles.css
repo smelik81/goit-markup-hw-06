@@ -39,6 +39,8 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
   color: #434455;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .visually-hidden {
   position: absolute;
@@ -224,8 +226,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  /*min-height: 623px;
-  height: 100vh;*/ /*можно задати любий по макету не зовсім зрозумів який треба*/
+  min-height: 623px;
+  /*height: 100vh;*/ /*можно задати любий по макету не зовсім зрозумів який треба*/
   background-color: #F4F4FD;
   padding-top: 72px;
   padding-bottom: 40px;
