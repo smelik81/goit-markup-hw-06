@@ -39,8 +39,8 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
   color: #434455;
-  max-width: 100%;
-  overflow-x: hidden;
+  /*max-width: 100%;
+  overflow-x: hidden;*/
 }
 .visually-hidden {
   position: absolute;
@@ -243,8 +243,8 @@ body {
   pointer-events: none;
 }
 .mobile-btn-menu:hover .mobile-window {
-  transform: translateY(100%);
-  visibility: visible;
+    transform: translateY(100%);
+    visibility: visible;
 }
 .mobile-btn-close {
   padding: 0;
