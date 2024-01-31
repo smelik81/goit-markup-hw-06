@@ -36,7 +36,7 @@
     }
     .header-logo {
         margin-right: 120px;
-        animation: rotate-center 1.2s ease-in-out reverse both;
+        animation: rotate-center 1.2s ease-in-out infinite reverse both;
     }
     .header-menu {
         margin-right: 120px;
@@ -362,11 +362,20 @@
     .footer-social {
          margin-right: 80px;
     }
+    .footer-logo {
+        transition: transform 1000ms ease-in-out 0ms;
+    }
+    .footer-logo:hover {
+        transform: skew(30deg, 10deg) scale(1.5);
+    }
 }
 
 @keyframes rotate-center {
   0% {
     transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.5);
   }
   100% {
     transform: rotate(360deg);
