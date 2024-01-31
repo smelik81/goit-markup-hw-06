@@ -36,6 +36,7 @@
     }
     .header-logo {
         margin-right: 120px;
+        animation: rotate-center 1.2s ease-in-out reverse both;
     }
     .header-menu {
         margin-right: 120px;
@@ -128,6 +129,7 @@
         gap: 48px;
         align-items: center;
     }
+    
 }
 
 
@@ -323,6 +325,12 @@
         padding-bottom: 32px;
         align-items: flex-start;
     }
+    .footer-soc-item {
+        transition: transform 250ms ease-in-out 0ms;
+    }
+    .footer-soc-item:hover {
+        transform: scale(1.2);
+    }
     .footer-form {
         align-items: flex-start;
     }
@@ -354,4 +362,13 @@
     .footer-social {
          margin-right: 80px;
     }
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

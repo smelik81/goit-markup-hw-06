@@ -23,6 +23,26 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileWindow.classList.remove("is-open");
   });
 
+
+
+  const email = document.getElementById("user-mail");
+  const phone = document.getElementById("user-tel");
+
+  email.addEventListener("input", function (event) {
+    if (email.validity.typeMismatch) {
+      email.setCustomValidity("I am expecting an e-mail address!");
+    } else {
+      email.setCustomValidity("");
+    }
+  });
+
+  phone.addEventListener("input", function (event) {
+    if (phone.validity.typeMismatch) {
+      phone.setCustomValidity("I am expecting an telephone number!");
+    } else {
+      phone.setCustomValidity("");
+    }
+  });
 });
 /*for (const item of showModalWindow) {
     item.querySelector(".modal-btn-close").onclick = () => item.remove();
