@@ -28,8 +28,11 @@
     .modal-title {
         width: 360px;
     }
-    .checkbox-description a {
-        margin-left: 0;
+    .span-wrap {
+        width: 100%;
+        flex-wrap: nowrap;
+        display: flex;
+        gap: 4px;
     }
     .mobile-btn-menu {
         display: none;
